@@ -25,18 +25,18 @@
                     <legend class="formulario__legenda">Informações básicas</legend>
                     <div class="input-container input-container--invalido">
                         <input name="nome" id="nome" class="input" type="text" placeholder="Nome"
-                        required>
+                        required data-tipo="nome">
                         <label class="input-label" for="nome">Nome</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" required placeholder="Email">
+                        <input name="email" id="email" class="input" type="email" data-tipo="email" required placeholder="Email">
                         <label class="input-label" for="email">Email</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
                         <input name="senha" id="senha" class="input" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, 
-                        deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required placeholder="Senha">
+                        deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." data-tipo="senha" required placeholder="Senha">
                         <label class="input-label" for="senha">Senha</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
